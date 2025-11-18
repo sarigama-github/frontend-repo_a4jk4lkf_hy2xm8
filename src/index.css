@@ -43,4 +43,14 @@
     --tw-exit-translate-x: initial;
     --tw-exit-translate-y: initial;
   }
+
+  /* Subtle light texture using layered gradients (no external assets) */
+  .bg-texture-light {
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 1px),
+      radial-gradient(circle at 3px 3px, rgba(0,0,0,0.02) 1px, transparent 1px),
+      linear-gradient(0deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+    background-size: 24px 24px, 24px 24px, auto;
+    background-position: 0 0, 12px 12px, 0 0;
+  }
 }
